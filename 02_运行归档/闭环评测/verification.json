@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-15",
+  "platform": "Windows",
+  "python": "3.12.7",
+  "tests_run": 29,
+  "passed": 28,
+  "skipped": [
+    {
+      "test": "test_sigkill_scheduler_guard_reaps_child (test_robotwin_eval.GuardTests.test_sigkill_scheduler_guard_reaps_child)",
+      "reason": "Parent reparenting is the Linux production contract"
+    }
+  ],
+  "failures": 0,
+  "errors": 0,
+  "elapsed_s": 118.891,
+  "successful": true,
+  "scope": "CPU state machine, real subprocesses, lightweight simulator/model doubles; not MI300X physics evaluation"
+}

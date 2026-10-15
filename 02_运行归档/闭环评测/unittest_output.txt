@@ -1,0 +1,34 @@
+test_actual_amd_loop_normal_failure_is_audited (test_robotwin_eval.AuditedWorkerTests.test_actual_amd_loop_normal_failure_is_audited) ... ok
+test_actual_amd_loop_success_is_audited (test_robotwin_eval.AuditedWorkerTests.test_actual_amd_loop_success_is_audited) ... ok
+test_actual_amd_loop_swallowed_disconnect_is_rejected (test_robotwin_eval.AuditedWorkerTests.test_actual_amd_loop_swallowed_disconnect_is_rejected) ... ok
+test_prepare_freezes_best_and_real_identity_detects_model_change (test_robotwin_eval.CheckpointTests.test_prepare_freezes_best_and_real_identity_detects_model_change) ... ok
+test_truncated_shard_rejected_and_snapshot_survives_source_unlink (test_robotwin_eval.CheckpointTests.test_truncated_shard_rejected_and_snapshot_survives_source_unlink) ... ok
+test_all_500_include_failures_and_no_501st_execution (test_robotwin_eval.EvalTests.test_all_500_include_failures_and_no_501st_execution) ... ok
+test_atomic_publish_never_overwrites_or_commits_partial_write (test_robotwin_eval.EvalTests.test_atomic_publish_never_overwrites_or_commits_partial_write) ... ok
+test_changed_runtime_identity_stops_before_server_start (test_robotwin_eval.EvalTests.test_changed_runtime_identity_stops_before_server_start) ... ok
+test_corrupt_record_or_missing_evidence_refuses_resume (test_robotwin_eval.EvalTests.test_corrupt_record_or_missing_evidence_refuses_resume) ... ok
+test_cross_directory_restore_keeps_progress_and_resumes (test_robotwin_eval.EvalTests.test_cross_directory_restore_keeps_progress_and_resumes) ... ok
+test_disk_full_during_commit_stops_without_false_progress (test_robotwin_eval.EvalTests.test_disk_full_during_commit_stops_without_false_progress) ... ok
+test_hard_deadline_kills_real_episode_and_leaves_it_pending (test_robotwin_eval.EvalTests.test_hard_deadline_kills_real_episode_and_leaves_it_pending) ... ok
+test_identity_change_rejected (test_robotwin_eval.EvalTests.test_identity_change_rejected) ... ok
+test_inconsistent_seed_or_check_success_rejected (test_robotwin_eval.EvalTests.test_inconsistent_seed_or_check_success_rejected) ... ok
+test_keyboard_interrupt_preserves_first_and_retries_current (test_robotwin_eval.EvalTests.test_keyboard_interrupt_preserves_first_and_retries_current) ... ok
+test_lock_denies_second_scheduler (test_robotwin_eval.EvalTests.test_lock_denies_second_scheduler) ... ok
+test_package_identity_probe_is_executable (test_robotwin_eval.EvalTests.test_package_identity_probe_is_executable) ... ok
+test_packaged_cli_help_and_status_work_without_model_imports (test_robotwin_eval.EvalTests.test_packaged_cli_help_and_status_work_without_model_imports) ... ok
+test_partial_and_duplicate_records_not_silently_accepted (test_robotwin_eval.EvalTests.test_partial_and_duplicate_records_not_silently_accepted) ... ok
+test_pinned_launcher_and_both_evaluator_shapes (test_robotwin_eval.EvalTests.test_pinned_launcher_and_both_evaluator_shapes) ... ok
+test_real_subprocess_results_resume_without_repeating (test_robotwin_eval.EvalTests.test_real_subprocess_results_resume_without_repeating) ... ok
+test_resume_skips_success_and_normal_failure (test_robotwin_eval.EvalTests.test_resume_skips_success_and_normal_failure) ... ok
+test_rollout_error_with_final_zero_is_not_model_failure (test_robotwin_eval.EvalTests.test_rollout_error_with_final_zero_is_not_model_failure) ... ok
+test_source_data_code_is_hashed_but_training_data_is_excluded (test_robotwin_eval.EvalTests.test_source_data_code_is_hashed_but_training_data_is_excluded) ... ok
+test_time_budget_and_grace_stop_dispatch (test_robotwin_eval.EvalTests.test_time_budget_and_grace_stop_dispatch) ... ok
+test_venv_python_invocation_is_not_resolved_to_base_interpreter (test_robotwin_eval.EvalTests.test_venv_python_invocation_is_not_resolved_to_base_interpreter) ... ok
+test_guard_cleans_owned_child_even_if_first_status_write_fails (test_robotwin_eval.GuardTests.test_guard_cleans_owned_child_even_if_first_status_write_fails) ... ok
+test_real_child_deadline_and_cleanup (test_robotwin_eval.GuardTests.test_real_child_deadline_and_cleanup) ... ok
+test_sigkill_scheduler_guard_reaps_child (test_robotwin_eval.GuardTests.test_sigkill_scheduler_guard_reaps_child) ... skipped 'Parent reparenting is the Linux production contract'
+
+----------------------------------------------------------------------
+Ran 29 tests in 118.771s
+
+OK (skipped=1)

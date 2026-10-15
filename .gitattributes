@@ -1,0 +1,3 @@
+# Preserve the exact tested bytes and upload archive across platforms.
+* -text
+*.zip binary

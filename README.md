@@ -2,11 +2,14 @@
 
 面向 ModelScope MI300X / ROCm 的 LingBot-VLA 2.0 闭环评测工具。固定评测 50 个 clean/seen 任务，每任务 10 次；每个 episode 单独保存结果，每次会话最多 8 小时，允许多次运行累计到 500 项。
 
+- **[部署 agent 交接入口（2026-10-16，最新迁移状态）](docs/deployment/2026-10-16-agent-handoff.md)**
 - **[闭环评测完整操作手册](docs/plans/2026-10-15-robotwin-closed-loop-evaluation.md)**
 - **[旧实例需要补齐的文件清单](docs/旧实例补充文件清单.md)**
 - **[下载 ModelScope 上传包](artifacts/robotwin_eval_upload.zip)**（约 43 KB，仅工具和说明）
 - [本地验收记录](02_运行归档/闭环评测/验收记录.md)
 - [重跑软件测试和重新打包](docs/运行本地软件测试.md)
+
+> **2026-10-16 部署更新：** 本次迁移模型为 `formal_muon_mb2_ga50_20261016_010215` 第 150 步，须显式指定 `--parent-run`。完整环境归档已通过 SHA256 和包文件清单检查；RoboTwin 兼容补丁、仿真资产、渲染和设备端恢复验收仍待完成。先读上面的交接入口，勿沿用旧手册/ZIP 中的 10 月 15 日模型默认路径。
 
 ## 已实现
 

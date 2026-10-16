@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-16",
+  "scope": "Local migration audit and handoff; no target-device acceptance performed",
+  "model": {
+    "parent_run": "/mnt/workspace/runtime/formal_muon_mb2_ga50_20261016_010215",
+    "best": {
+      "run_id": "60e52e4910a94139883bf819ff7deffc",
+      "global_step": 150,
+      "path": "/mnt/workspace/runtime/formal_muon_mb2_ga50_20261016_010215/checkpoints/global_step_150/hf_ckpt",
+      "external_base_weights": false,
+      "metric": "mean_validation_vla_loss",
+      "score": 0.1227959977015853,
+      "recipe": {
+        "version": "episode45_train5_validation_v1",
+        "train_episodes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "validation_episodes": [
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "train_episode_count": 2250,
+        "validation_episode_count": 250,
+        "samples_per_validation_episode": 2,
+        "validation_seed": 20261011,
+        "metric": "mean_validation_vla_loss",
+        "better": "strictly_lower",
+        "noise_draws_per_sample": 1
+      }
+    },
+    "global_step": 150,
+    "run_id": "60e52e4910a94139883bf819ff7deffc",
+    "floating_weight_dtype": "bfloat16",
+    "total_tensor_bytes": 12452772206,
+    "shard_count": 7,
+    "export_files": 22,
+    "structure_check_passed": true,
+    "checksum_manifest": "model-sha256-20261016.txt",
+    "checksum_origin": "Computed from the verified local export; no independent source-model checksum manifest was supplied",
+    "gpu_load_verified": false
+  },
+  "environment_archive": {
+    "archive": "robotwin-env-complete-20261016_114514.tar.gz",
+    "size": 920411674,
+    "sha256_expected": "b609bf58ce158dfe484b0cdf576285a99d05914e6461c4eedffcec9b76b34cec",
+    "sha256_actual": "b609bf58ce158dfe484b0cdf576285a99d05914e6461c4eedffcec9b76b34cec",
+    "sha256_match": true,
+    "archive_read_complete": true,
+    "file_unchanged_during_check": true,
+    "file_entries": 29476,
+    "uncompressed_file_bytes": 2578308774,
+    "pyvenv_cfg": "home = /usr/bin\ninclude-system-site-packages = true\nversion = 3.12.13\nexecutable = /usr/bin/python3.12\ncommand = /usr/bin/python -m venv --system-site-packages /mnt/workspace/venvs/robotwin-env\n",
+    "links": [
+      {
+        "name": "robotwin-env/bin/python",
+        "target": "/usr/bin/python",
+        "type": "symlink"
+      },
+      {
+        "name": "robotwin-env/bin/python3",
+        "target": "python",
+        "type": "symlink"
+      },
+      {
+        "name": "robotwin-env/bin/python3.12",
+        "target": "python",
+        "type": "symlink"
+      },
+      {
+        "name": "robotwin-env/lib64",
+        "target": "lib",
+        "type": "symlink"
+      }
+    ],
+    "unsafe_names": [],
+    "module_entrypoints_present": {
+      "transformers": true,
+      "sapien": true,
+      "open3d": true,
+      "safetensors": true,
+      "yaml": true,
+      "numpydantic": true,
+      "numpy": true,
+      "mplib": true
+    },
+    "record_count": 95,
+    "record_entries": 29467,
+    "record_missing": []
+  },
+  "system": {
+    "os_release": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "gpu_python_record": "executable: /mnt/workspace/venvs/robotwin-env/bin/python\nbase_prefix: /usr\ntorch: 2.12.0+git6bbd260\nROCm: 7.2.53211\n",
+    "exact_image_id_known": false,
+    "include_system_site_packages": true,
+    "system_inherited_packages": [
+      "torch",
+      "tokenizers"
+    ],
+    "runtime_verification_pending": true
+  },
+  "vulkan": {
+    "raw_records": {
+      "vulkan_packages.txt": "dpkg-query: no packages found matching libvulkan1\ndpkg-query: no packages found matching vulkan-tools\ndpkg-query: no packages found matching mesa-vulkan-drivers\n\nexit_code=1\n",
+      "vulkaninfo_summary.txt": "vulkaninfo command not found\n",
+      "vulkan_config_files.txt": "find: '/etc/vulkan': No such file or directory\nfind: '/usr/share/vulkan': No such file or directory\nfind: '/usr/local/share/vulkan': No such file or directory\nfind: '/root/.local/share/vulkan': No such file or directory\n",
+      "vulkan_driver_settings.txt": "VK_ICD_FILENAMES=\nVK_DRIVER_FILES=\n"
+    },
+    "rendering_verified": false
+  },
+  "pending": [
+    "Confirm exact ModelScope image and actual payload paths on new instance",
+    "Apply and verify RoboTwin compatibility patch",
+    "Restore missing XPolicyLab installation and launch files as needed",
+    "Provide objects, embodiments and background_texture assets",
+    "Verify Vulkan, SAPIEN and actual task rendering",
+    "Validate GPU inference and first formal episode",
+    "Perform Linux interruption, forced cleanup, restart and resume acceptance"
+  ],
+  "historical_software_tests": {
+    "date": "2026-10-15",
+    "platform": "Windows / Python 3.12.7",
+    "total": 29,
+    "passed": 28,
+    "skipped": 1,
+    "failed": 0,
+    "linux_sigkill_acceptance_passed": false,
+    "rerun_during_documentation_release": false
+  },
+  "publication_scope": "Documentation, checksums and small environment records only. Model shards, full environment archive, source payloads and simulation assets are not uploaded."
+}

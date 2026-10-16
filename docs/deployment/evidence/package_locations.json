@@ -1,0 +1,87 @@
+{
+  "executable": "/mnt/workspace/venvs/robotwin-env/bin/python",
+  "prefix": "/mnt/workspace/venvs/robotwin-env",
+  "base_prefix": "/usr",
+  "sys_path": [
+    "",
+    "/usr/lib/python312.zip",
+    "/usr/lib/python3.12",
+    "/usr/lib/python3.12/lib-dynload",
+    "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages",
+    "__editable__.xpolicylab-0.0.1.finder.__path_hook__",
+    "/usr/local/lib/python3.12/dist-packages",
+    "/usr/lib/python3/dist-packages"
+  ],
+  "packages": {
+    "torch": {
+      "origin": "/usr/local/lib/python3.12/dist-packages/torch/__init__.py",
+      "search_locations": [
+        "/usr/local/lib/python3.12/dist-packages/torch"
+      ],
+      "version": "2.12.0+git6bbd260"
+    },
+    "transformers": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/transformers/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/transformers"
+      ],
+      "version": "4.57.3"
+    },
+    "sapien": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/sapien/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/sapien"
+      ],
+      "version": "3.0.3"
+    },
+    "open3d": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/open3d/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/open3d"
+      ],
+      "version": "0.19.0"
+    },
+    "safetensors": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/safetensors/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/safetensors"
+      ],
+      "version": "0.5.3"
+    },
+    "tokenizers": {
+      "origin": "/usr/local/lib/python3.12/dist-packages/tokenizers/__init__.py",
+      "search_locations": [
+        "/usr/local/lib/python3.12/dist-packages/tokenizers"
+      ],
+      "version": "0.22.2"
+    },
+    "numpy": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/numpy/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/numpy"
+      ],
+      "version": "1.26.4"
+    },
+    "yaml": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/yaml/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/yaml"
+      ],
+      "version": "6.0.2"
+    },
+    "mplib": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/mplib/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/mplib"
+      ],
+      "version": "0.2.1"
+    },
+    "numpydantic": {
+      "origin": "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/numpydantic/__init__.py",
+      "search_locations": [
+        "/mnt/workspace/venvs/robotwin-env/lib/python3.12/site-packages/numpydantic"
+      ],
+      "version": "1.6.11"
+    }
+  }
+}

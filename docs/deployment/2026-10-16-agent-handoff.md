@@ -9,7 +9,7 @@
 - 每次会话最多 8 小时，可跨会话、实例重启及迁移继续；8 小时不是完成 500 项的承诺。
 - 只跳过已提交的正式结果，正常任务失败也计入完成；基础设施异常保留为待重试。
 - 现有调度工具已经实现；当前工作是恢复部署和设备端验收，不是重新训练或重写评测系统。
-- 此仓库公开，只含工具、文档和小型检查证据。模型、环境归档、完整修改版源码及仿真资产不在 GitHub 中；接手时要确认它们已经上传或挂载到新实例，不能从 `git clone` 成功推断迁移完成。
+- 此仓库公开。用户 `实例迁移` 目录全部 12,255 个文件现通过 [完整迁移 Release](https://github.com/zyiguo/robotwin-eval-resume/releases/tag/migration-20261016-step150) 提供，包括 7 个模型分片、有效环境归档和全部现有源码/记录；按[下载恢复说明](migration-release-download.md)获取并逐文件校验。`git clone` 只下载工具和文档，大附件需另外下载。用户原目录未包含的仿真资产仍需补齐。
 
 ## 2. 当前模型：必须显式指定
 
@@ -30,7 +30,7 @@ global_step=150
 
 ## 3. 本地迁移材料及验证状态
 
-用户的本地目录是 `C:\Users\root\Desktop\蚂蚁灵波\实例迁移`，它不是新实例路径；不要尝试在 Linux 使用这个 Windows 路径。
+用户的本地目录是 `C:\Users\root\Desktop\蚂蚁灵波\实例迁移`，它不是新实例路径；不要尝试在 Linux 使用这个 Windows 路径。全部原始材料已备份到上述 Release；下载恢复后才可执行后续路径恢复。
 
 | 材料 | 当前状态 | 新实例目标 |
 |---|---|---|
@@ -128,7 +128,7 @@ cd /mnt/workspace/robotwin_eval
 python scripts/robotwin_eval.py --help
 ```
 
-ZIP 内 README 保留旧模型示例；本次所有模型/批次参数以本文显式命令为准。ZIP 不含此次新下载的大环境归档或权重。
+ZIP 内 README 保留旧模型示例；本次所有模型/批次参数以本文显式命令为准。ZIP 不含此次新下载的大环境归档或权重；这些文件已作为完整迁移 Release 的独立附件提供。
 
 ### C. 源码、兼容补丁和 editable 路径
 
@@ -221,6 +221,10 @@ python -u scripts/robotwin_eval.py run --batch-dir "$BATCH"
 完成条件：50 个任务各有 10 个经过校验的正式结果，总计恰好 500；报告同时保留正常失败和运行异常，部分结果不称为完整成绩。保持用户要求的单次 8 小时预算，不自动关闭平台实例。
 
 ## 7. 证据和优先级
+
+- [完整迁移 Release](https://github.com/zyiguo/robotwin-eval-resume/releases/tag/migration-20261016-step150)：全部 12,255 个原始文件，包含约 12.5 GB 模型权重
+- [下载与完整目录恢复](migration-release-download.md)
+- [发布附件校验清单](evidence/full-release-assets-20261016.sha256)
 
 - [机器可读迁移状态](evidence/2026-10-16-migration-audit.json)
 - [完整包版本清单](evidence/robotwin_packages.json)

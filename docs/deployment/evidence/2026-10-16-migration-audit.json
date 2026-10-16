@@ -173,5 +173,13 @@
     "linux_sigkill_acceptance_passed": false,
     "rerun_during_documentation_release": false
   },
-  "publication_scope": "Documentation, checksums and small environment records only. Model shards, full environment archive, source payloads and simulation assets are not uploaded."
+  "publication_scope": "Documentation and small evidence in Git; all 12255 original migration files available as Release assets. Missing simulation assets and pending deployment fixes are not fabricated.",
+  "full_migration_release": {
+    "tag": "migration-20261016-step150",
+    "url": "https://github.com/zyiguo/robotwin-eval-resume/releases/tag/migration-20261016-step150",
+    "original_file_count": 12255,
+    "original_bytes": 13993595246,
+    "asset_count": 14,
+    "all_assets_sha256_verified_by_github": true
+  }
 }

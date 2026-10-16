@@ -2,6 +2,7 @@
 
 面向 ModelScope MI300X / ROCm 的 LingBot-VLA 2.0 闭环评测工具。固定评测 50 个 clean/seen 任务，每任务 10 次；每个 episode 单独保存结果，每次会话最多 8 小时，允许多次运行累计到 500 项。
 
+- **[下载全部迁移文件：模型、环境及源码](https://github.com/zyiguo/robotwin-eval-resume/releases/tag/migration-20261016-step150)**（Release 附件；[下载恢复说明](docs/deployment/migration-release-download.md)）
 - **[部署 agent 交接入口（2026-10-16，最新迁移状态）](docs/deployment/2026-10-16-agent-handoff.md)**
 - **[闭环评测完整操作手册](docs/plans/2026-10-15-robotwin-closed-loop-evaluation.md)**
 - **[旧实例需要补齐的文件清单](docs/旧实例补充文件清单.md)**
@@ -22,7 +23,7 @@
 
 ## 开始使用
 
-先按清单迁移旧实例的环境、已修改源码、完整自训导出和 Qwen 配置/tokenizer，并补齐仿真资产。仓库和上传包不含这些大文件，也不含平台凭据。
+先按清单迁移旧实例的环境、已修改源码、完整自训导出和 Qwen 配置/tokenizer，并补齐仿真资产。Git 仓库和工具 ZIP 不内嵌这些大文件；完整迁移 Release 已提供本地目录的全部材料，按下载恢复说明另取附件。原目录未包含的仿真资产仍需补齐。
 
 将 artifacts 中的 ZIP 上传到新实例 `/mnt/workspace`，解压得到 `robotwin_eval/`，激活恢复的 venv。按主手册首次执行 `prepare`，以后针对同一批次反复执行 `run`。不要用原项目旧 eval.sh 代替本工具的续跑入口。
 
